@@ -1,0 +1,170 @@
+/* Principal */
+:root {
+    --color-primario: #f7a50f;
+    --color-secundario: #08262c;
+    --color-fondo: #f2f2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navegador {
+    background-color: var(--color-primario);
+}
+
+.navegador ul {
+    display: flex;
+    list-style: none;
+    justify-content: start;
+}
+
+.navegador ul a {
+    color: var(--color-secundario);
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navegador ul a:hover {
+    color: #020101;
+    transform: translateY(-2px);
+}
+
+.boton-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+  
+.boton-carrito i {
+    margin-right: 25px;
+}
+  
+
+/* Index */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 2px 10px #0000004d;
+    transform: translateZ(0);
+}
+
+.producto img {
+    width: 100%;
+}
+
+.producto span {
+    font-weight: bold;
+}
+
+.producto:hover {
+    box-shadow: 0px 6px 20px #00000080;
+    transform: translateY(-5px) translateZ(0);
+}
+
+.boton {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.boton:hover {
+    background-color: #59a1a4;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+/* Edit */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 280px;
+    background-color: #59a1a4;
+    margin: 10px;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+.formulario input {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario button {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.editar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.editar input {
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.carrito {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.boton-limpiar {
+    color: var(--color-secundario);
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.boton-limpiar:hover {
+    color: #020101;
+    transform: translateY(-2px);
+}
